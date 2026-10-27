@@ -1,0 +1,21 @@
+# Gradle and Android build output
+.gradle/
+**/build/
+**/.cxx/
+**/.externalNativeBuild/
+/captures/
+
+# Local machine configuration
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local model weights are large and have separate distribution terms
+/models/*.gguf
+/app/src/main/assets/models/*.gguf

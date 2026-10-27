@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FAFC">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="12dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/tvAstra"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ASTRA"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#2563EB" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="⚙"
+            android:textSize="22sp"
+            android:textColor="#1E293B"
+            android:backgroundTint="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <!-- Greeting -->
+        <TextView
+            android:id="@+id/tvGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good evening, Mitesh"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:layout_marginTop="55dp" />
+
+        <!-- Voice Button -->
+        <Button
+            android:id="@+id/btnVoice"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="🎙"
+            android:textSize="36sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2563EB"
+            android:layout_marginTop="45dp" />
+
+        <!-- Assistant Message -->
+        <TextView
+            android:id="@+id/tvAssistantMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How can I help?"
+            android:textSize="20sp"
+            android:textColor="#475569"
+            android:layout_marginTop="30dp" />
+
+    </LinearLayout>
+
+    <!-- Message Input Area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="10dp"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:hint="Type a message..."
+            android:textSize="16sp"
+            android:textColor="#1E293B"
+
+            android:singleLine="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="12dp"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:text="➤"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2563EB" />
+
+    </LinearLayout>
+
+</LinearLayout>
